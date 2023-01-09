@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "password": "bilge",
+      "email": "bilge@gmail.com",
+      "id": 1
+    
+    },
+    {
+      "password": "ecem",
+      "email": "ecem@gmail.com",
+      "id": 2
+    },
+    {
+      "password": "bilgeecem",
+      "email": "bilgeecem@gmail.com",
+      "id": 3
+    },
+    {
+      "password": "bilge",
+      "email": "bilgg@gmail.com",
+      "id": 4
+    }
+  ]
+}
