@@ -1,0 +1,19 @@
+.list-group-item{
+    height: 50px;
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+    color: coral;
+}
+#ng{
+    font-style: italic;
+    color:grey
+}
+#zoom{
+    width: 20rem;
+  
+    &:hover{
+        transform: scale(1.05);
+    }
+}

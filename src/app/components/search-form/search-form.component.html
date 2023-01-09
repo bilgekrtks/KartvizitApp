@@ -1,0 +1,76 @@
+<p-fieldset styleClass="shadow-4" [toggleable]="true">
+    <ng-template pTemplate="header"><span>Search</span>
+        <p-badge class="search-form flex align-self-start select-none pl-1"
+            styleClass="flex align-items-center p-0 pl-1 pi pi-search-plus shadow-5" severity="info"
+            pTooltip="Search Active" tooltipStyleClass="info-tooltip">
+        </p-badge>
+    </ng-template>
+    <div class="search-form" [formGroup]="searchForm">
+        <div class="grid">
+            <div class="col-12 sm:col-12 md:col-6 lg:col-3 p-2">
+                <div class="field grid">
+
+                    <label for="name" class="col-fixed" style="width:8rem">Name</label>
+                    <div class="col">
+                        <input pInputText formControlName="name" id="name-box" class="w-full" />
+                    </div>
+                </div>
+     
+                <div class="field grid">
+
+                    <label for="title" class="col-fixed" style="width:8rem">Title</label>
+                    <div class="col">
+                        <input pInputText formControlName="title" id="title-box" class="w-full" />
+                    </div>
+                </div>
+                <div class="field grid">
+                    <label for="number" class="col-fixed" style="width:8rem">Number</label>
+                    <div class="col">
+                        <p-inputNumber
+                        id="lubNumber"
+                        formControlName="number"
+                        styleClass="w-full"
+                    ></p-inputNumber>
+                    </div>
+                </div>
+                <div class="field grid">
+
+                    <label for="mail" class="col-fixed" style="width:8rem">Mail</label>
+                    <div class="col">
+                        <input pInputText formControlName="mail" id="mail-box" class="w-full" />
+                    </div>
+                </div>
+                <div class="field grid">
+
+                    <label for="adress" class="col-fixed" style="width:8rem">Adress</label>
+                    <div class="col">
+                        <input pInputText formControlName="adress" id="name-box" class="w-full" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="flex justify-content-end">
+        <button
+            pButton
+            pRipple
+            type="button"
+            label="Search"
+            icon="pi pi-search"
+            class="p-button-success shadow-5 mr-3"
+            (click)="searchButtonClicked.emit(searchForm)"
+        >search</button>
+        <button
+            pButton
+            pRipple
+            type="button"
+            label="Cancel"
+            class="p-button-danger shadow-5 mr-3"
+            (click)="resetButtonClicked.emit()"
+            [disabled]="!searchActive"
+        >cancel</button>
+    </div>
+ 
+</p-fieldset>

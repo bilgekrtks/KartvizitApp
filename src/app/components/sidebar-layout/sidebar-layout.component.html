@@ -1,0 +1,11 @@
+<p-sidebar
+    [(visible)]="active"
+    [showCloseIcon]="false"
+    position="right"
+    [baseZIndex]="10000"
+    (onHide)="activeChange.emit(false)"
+    [style]="{ width: '30rem' }"
+    [transitionOptions]="'400ms cubic-bezier(0, 0, 0.2, 1)'"
+>
+<app-sidebar [data]="data"></app-sidebar>
+</p-sidebar>

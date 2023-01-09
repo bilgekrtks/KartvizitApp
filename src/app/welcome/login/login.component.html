@@ -1,0 +1,15 @@
+
+ 
+    <div class="log">
+        <form [formGroup]="login" class="shadow p-3 mb-5  rounded">
+            <h2>LOGIN</h2>
+            <input type="text" placeholder="Enter E-mail" class="inp" formControlName="email"/>
+            <input type="password" placeholder="Enter Password" class="inp" formControlName="password"/>
+         
+            <div class="btns">
+                <button class="btn1" (click)="loginSubmit(login.value)" [disabled]="login.invalid">Login</button>
+                <button class="btn1" (click)="goToSignup()">Sign Up</button>
+            </div>
+        </form>
+    </div>
+

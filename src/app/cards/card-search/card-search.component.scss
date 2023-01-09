@@ -1,0 +1,40 @@
+input {
+    min-width: 200px;
+    margin-right: 16px;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 5px 3rem 5px 16px;
+    margin-left: 8px;
+    width: 200px;
+    max-width: 500px;
+    line-height: normal;
+    height: 50%;
+    &:focus {
+        outline: none;
+    }
+
+    @media (min-width: 1000px) {
+        transition: width 0.4s ease-out;
+
+        &:focus {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 515px) {
+        width: 150px;
+    }
+
+    &::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    &::-ms-clear {
+        display: none;
+    }
+
+    &:not(:focus):not(:hover)+mat-icon:not(:hover):not(:focus) {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="shadow-5 h-full p-2 ml-2 mr-2">
+    <div *ngFor="let col of cols; let i = index">
+        <div class="justify-content-between">
+            <label class="font-semibold align-self-center text-left text-sm" style="max-width: 35%">
+            {{col.header}}
+        </label>
+        <span class="font-semibold align-self-center text-left text-sm" style="max-width: 55%">
+            {{col.field}
+        </span>
+        </div>
+        <p-divider *ngIf="i === cols.length - 1"></p-divider>
+    </div>
+</div>

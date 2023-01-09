@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import './global.scss';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  
+}
+
+main {
+    .page-title {
+        font-size: 30px;
+        color: coral;
+
+    }
+}
+
+.btn1 {
+    padding: 3px 3px;
+    background-color: #AFD092;
+    margin-right: 5px;
+    font-weight: 600;
+    border: none;
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.btn1:disabled {
+    background-color: grey;
+    opacity: 0.8;
+    color: white;
+    cursor: not-allowed;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/originals/34/1c/ab/341cab2d31696fda7b83a5214be73bef.jpg");
+    background-size: cover;
+}
+
+.log::before {
+    content: "";
+    position: absolute;
+    opacity: 0.1;
+    z-index: -1;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+  }
+
